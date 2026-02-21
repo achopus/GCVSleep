@@ -2,8 +2,8 @@
 
 Research code for automatic sleep stage classification from raw physiological signals (EEG/EMG). The core model is a dual-branch network:
 
-- Branch 1: per-window classifier (no temporal context)
-- Branch 2: contextual classifier (Transformer over window embeddings)
+- Branch 1: CNN based feature extraction
+- Branch 2: GCV based memory bank
 
 The training loop supports k-fold cross-validation, checkpointing, and optional supervised contrastive learning.
 
